@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Sales & Services Company</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Add custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Penguin Sales & Services">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="dropdown-toggle">Our Services <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-dropdown-content">
+                    <li><a href="/services/bridalServices/bridalServices.html">Bridal Car Services</a></li>
+                    <li><a href="/services/towingServices/towingServices.html">Towing Services 24/7</a></li>
+                    <li><a href="/services/truckingServices/truckingServices.html">Trucking Services</a></li>
+                    <li><a href="#equipment">Heavy Equipment Rental</a></li>
+                    <li><a href="#construction">General Construction & Maintenance Services</a></li>
+                    <li><a href="#furniture">Furniture Hotel & Residential</a></li>
+                    <li><a href="#parts">Auto Parts</a></li>
+                </ul>
+            </li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero" id="home">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+            
+                
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4">
+                
+             
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Penguin Sales & Services Company</h1>
+            <p class="tagline">We Make It Happen.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button primary">Get Started</a>
+                <a href="#services" class="cta-button secondary">Explore Services</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#stats"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span class="stat-number" data-count="500">0</span>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <span class="stat-number" data-count="10">0</span>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <span class="stat-number">24/7</span>
+                    <p>Support</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <span class="stat-number">100%</span>
+                    <p>Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/7651924/pexels-photo-7651924.jpeg?auto=compress&cs=tinysrgb&w=600" alt="About Us">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">Your Trusted Partner For All Services</h2>
+                    <p>At Penguin Sales & Services Company, we deliver excellence through our comprehensive range of services designed to meet all your needs. With over a decade of experience, our professional team is committed to quality, reliability, and customer satisfaction.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional Team</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Support Service</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reasonable Pricing</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Guarantee</span>
+                        </div>
+                    </div>
+                    <a href="#services" class="about-cta">Explore Our Services <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section-->
+    <section class="services" id="services">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">What We Offer</span>
+            <h2 class="section-title" data-aos="fade-up">Our Premium Services</h2>
+            <p class="section-description" data-aos="fade-up">We provide a wide range of high-quality services to meet all your needs. Our commitment to excellence ensures satisfaction with every service we deliver.</p>
+            
+            <div class="services-grid">
+                <!-- Bridal Car Services -->
+
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/25052928/pexels-photo-25052928/free-photo-of-flower-decoration-of-car-for-wedding.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bridal Car">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Bridal Car Services</h3>
+                        <p>Make your special day even more memorable with our luxury bridal cars. We offer elegant, well-maintained vehicles for your wedding day.</p>
+                        <a href="services/bridalServices/bridalServices.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Towing Services -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/17429097/pexels-photo-17429097/free-photo-of-a-car-on-a-tow-truck.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Towing Services">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-truck-pickup"></i>
+                        </div>
+                        <h3>Towing Services 24/7</h3>
+                        <p>Round-the-clock emergency towing services you can rely on. Our team is always ready to assist you no matter when you need help.</p>
+                        <a href="./services/towingServices/towingServices.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Trucking Services -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/20882743/pexels-photo-20882743/free-photo-of-red-and-blue-trucks-parked-at-a-depot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trucking Services">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Trucking Services</h3>
+                        <p>Efficient and reliable transportation solutions for your cargo. Our fleet of trucks ensures safe and timely delivery of your goods.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Heavy Equipment Rental -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/14651/pexels-photo-14651.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Heavy Equipment">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-truck-monster"></i>
+                        </div>
+                        <h3>Heavy Equipment Rental</h3>
+                        <p>Quality equipment rentals for your construction needs. From excavators to bulldozers, we have the right equipment for your project.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Construction Services -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/18355812/pexels-photo-18355812/free-photo-of-workers-on-building-construction.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Construction">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3>General Construction & Maintenance</h3>
+                        <p>Comprehensive construction and maintenance services for residential and commercial properties. Quality workmanship guaranteed.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Furniture -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Furniture">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h3>Furniture Hotel & Residential</h3>
+                        <p>High-quality furniture solutions for hotels and residential properties. We provide stylish and durable furnishings for every space.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Need 24/7 Emergency Towing?</h2>
+                <p>Our professional team is ready to assist you anytime, day or night.</p>
+                <a href="tel:+12345678901" class="cta-phone"><i class="fas fa-phone-alt"></i> Call Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Our Work</span>
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <p class="section-description" data-aos="fade-up">Take a look at some of our recent projects that showcase our quality of work and the variety of services we provide.</p>
+            
+            <div class="project-slider">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a" alt="Construction Project">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Luxury Hotel Construction</h3>
+                            <p>Complete construction and furniture installation</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://midwestepi.org/wp-content/uploads/2017/05/wi-interstate-94.jpg?w=720" alt="Equipment Rental">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Highway Construction</h3>
+                            <p>Heavy equipment rental for major infrastructure project</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Furniture Project">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Hotel Furniture Installation</h3>
+                            <p>Complete furniture solutions for luxury hotel</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Testimonials</span>
+            <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+            <p class="section-description" data-aos="fade-up">Don't just take our word for it - hear from our satisfied clients about their experiences with our services.</p>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Outstanding service! The team went above and beyond our expectations. The construction was completed on time and with excellent quality."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="images/janel.jpg" alt="Client">
+                        </div>
+                        <div class="author-info">
+                            <h4>Jannel Gabita</h4>
+                            <p class="client-position">Kupal ng Antipolo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"The towing service was prompt and professional. They arrived within 20 minutes of my call and handled my vehicle with care. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-1/482005760_1714916662795473_4399657174575533882_n.jpg?stp=c84.0.1356.1356a_dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHOVImLTHcbM3-SwsoGlpSi5I2UDmmmWvLkjZQOaaZa8kWoCfgdNL8NONN6yMl_p9buurxnrZsqHJKCkoNO2XvJ&_nc_ohc=6jykv_h2m6gQ7kNvgG0h7cc&_nc_oc=AdlsMJM3qI-RNuLSG7dzWpBLcZH1JJKujRTyjALfIxUx5utvnauKrU6-T4n-R_Z0-jY&_nc_zt=24&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=P7PQPyC-c0yswb3V_WSibw&oh=00_AYFZFj9fznF4oJS6f0kxocVEBQck0jvyF3_5nWRhIbqlag&oe=67E6B3E3" alt="Client">
+                        </div>
+                        <div class="author-info">
+                            <h4>Darwin Demaclid</h4>
+                            <p class="client-position">Owner of Pulupandan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"The equipment rental process was smooth and efficient. The machinery was in excellent condition and helped us complete our project ahead of schedule."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-1/480259519_1339401617052220_7202449884205756084_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGrqeyRPN-e69vpqkYWWMTbFahUPooTYPMVqFQ-ihNg8wFGnPJm2jMtU_tnZky0beR2i0iK03Qg194PkkU-JE-z&_nc_ohc=EMKGRhRxk4kQ7kNvgHJHx4L&_nc_oc=Adm9JGFv7hYOJU90og2Hguagl7eNAgIJNy5nwqiB2IRiy38AgPxjMfPbWyjoW2haPPA&_nc_zt=24&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=24e6OEnoUYzdvSbAaP2hdw&oh=00_AYHgBDyWQ52uf32ryJqGu6TVmu3O9y37j8dwqjLg-OtiPQ&oe=67E6955E" alt="Client">
+                        </div>
+                        <div class="author-info">
+                            <h4>Allen Osorio</h4>
+                            <p class="client-position">The Legendary Boi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Contact Us</span>
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-description" data-aos="fade-up">Have questions or need more information? Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service">
+                                <option value="">Select a service</option>
+                                <option value="bridal">Bridal Car Services</option>
+                                <option value="towing">Towing Services</option>
+                                <option value="trucking">Trucking Services</option>
+                                <option value="equipment">Heavy Equipment Rental</option>
+                                <option value="construction">Construction & Maintenance</option>
+                                <option value="furniture">Furniture Services</option>
+                                <option value="parts">Auto Parts</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="How can we help you?" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-wrapper" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Our Location</h3>
+                                <p>123 Business Street, Manila, Philippines</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Call Us</h3>
+                                <p>+63 123 456 7890</p>
+                                <p>+63 234 567 8901</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email Us</h3>
+                                <p>info@penguinservices.com</p>
+                                <p>sales@penguinservices.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Working Hours</h3>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                                <p>Towing Services: 24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="Penguin Sales & Services">
+                    </div>
+                    <p>Penguin Sales & Services Company is your trusted partner for all your service needs. From bridal cars to heavy equipment rental, we make it happen.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Bridal Car Services</a></li>
+                        <li><a href="#">Towing Services 24/7</a></li>
+                        <li><a href="#">Trucking Services</a></li>
+                        <li><a href="#">Heavy Equipment Rental</a></li>
+                        <li><a href="#">Construction & Maintenance</a></li>
+                        <li><a href="#">Furniture Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, Manila, Philippines</li>
+                        <li><i class="fas fa-phone-alt"></i> +63 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@penguinservices.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Penguin Sales & Services Company. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Fixed Call Button for Mobile -->
+    <a href="tel:+63123456789" class="call-fixed">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Add AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="landing.js"></script>
+</body>
+</html>
