@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy Equipment Services - Penguin Sales & Services</title>
+    <link rel="stylesheet" href="heavyEquipmentServices.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/images/logo.jpg" alt="Penguin Sales & Services">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a></li>
+                <li><a href="#services">Equipment</a></li>
+                <li><a href="#how-it-works">Process</a></li>
+                <li><a href="#pricing">Rates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="cta-nav">Request Quote</a></li>
+            </ul>
+
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="/index.html"><i class="fas fa-arrow-left"></i> Back to Home</a></li>
+            <li><a href="#services">Equipment</a></li>
+            <li><a href="#how-it-works">Process</a></li>
+            <li><a href="#pricing">Rates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Request Quote</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Professional Heavy Equipment Services</h1>
+            <p>Specialized machinery and expert operators for your construction needs</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button primary"><i class="fas fa-file-contract"></i> Request Quote</a>
+                <a href="#services" class="cta-button secondary">Our Equipment</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+            <img src="https://images.pexels.com/photos/1139553/pexels-photo-1139553.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Heavy Equipment">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Equipment Fleet</h2>
+                <p>Top-quality heavy machinery for construction, excavation, and industrial projects</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="equipment-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/An_excavator_in_%28%28Ourense%29%29%2C_%28%28Spain%29%29%29.jpg" alt="Excavator">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-truck-monster"></i>
+                    </div>
+                    <h3>Excavators</h3>
+                    <p>Powerful digging equipment for earthmoving, trenching, and demolition projects.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equipment-img">
+                        <img src="https://images.pexels.com/photos/25559749/pexels-photo-25559749/free-photo-of-excavator-on-field.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bulldozer">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Bulldozers</h3>
+                    <p>Heavy-duty equipment for clearing land, removing debris, and pushing large quantities of soil.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equipment-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStnxK_pEPFdif6pGWxz9y9MAhBVaO2I3w1-g&s" alt="Wheel Loader">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Wheel Loaders</h3>
+                    <p>Versatile machines for loading materials, moving earth, and transporting heavy loads.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equipment-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkA5TIpDqkzigD4R57owgRUHoaxC6ukvcBvA&s" alt="Road Roller">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Road Rollers</h3>
+                    <p>Compaction equipment for road construction, foundation work, and asphalt projects.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="equipment-img">
+                        <img src="https://images.pexels.com/photos/5325460/pexels-photo-5325460.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Backhoe Loader">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-truck-pickup"></i>
+                    </div>
+                    <h3>Backhoe Loaders</h3>
+                    <p>Multi-functional machinery combining a loader bucket and a backhoe for various digging operations.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="equipment-img">
+                        <img src="https://images.pexels.com/photos/30339037/pexels-photo-30339037/free-photo-of-dump-truck-at-construction-site-in-nigeria.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dump Truck">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Dump Trucks</h3>
+                    <p>Heavy-duty vehicles designed for transporting loose materials such as sand, gravel, and demolition waste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Process</h2>
+                <p>Simple and efficient steps to get your project started</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Project Consultation</h3>
+                        <p>Contact our team to discuss your project requirements and equipment needs. We'll help you determine the right machinery for the job.</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Custom Quotation</h3>
+                        <p>We'll provide a detailed quote based on equipment type, rental duration, and any additional services required.</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Equipment Delivery</h3>
+                        <p>Our team will deliver the heavy machinery to your project site at the scheduled time, fully inspected and ready to operate.</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Operational Support</h3>
+                        <p>We provide skilled operators or comprehensive training for your team, along with ongoing technical support throughout your project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Equipment Rental Rates</h2>
+                <p>Competitive pricing options to suit projects of all sizes</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card" data-aos="flip-left">
+                    <div class="pricing-header">
+                        <h3>Daily Rental</h3>
+                        <div class="price">
+                            <span class="price-value">₱15,000</span>
+                            <span class="price-period">Starting at</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 24-hour equipment use</li>
+                            <li><i class="fas fa-check"></i> Delivery and pickup</li>
+                            <li><i class="fas fa-check"></i> Fuel included</li>
+                            <li><i class="fas fa-check"></i> Basic operator training</li>
+                            <li><i class="fas fa-check"></i> Phone technical support</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="pricing-btn">Request Quote</a>
+                </div>
+                
+                <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="100">
+                    <div class="featured-label">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Weekly Rental</h3>
+                        <div class="price">
+                            <span class="price-value">₱72,000</span>
+                            <span class="price-period">Starting at</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 7-day equipment use</li>
+                            <li><i class="fas fa-check"></i> Free delivery and pickup</li>
+                            <li><i class="fas fa-check"></i> Fuel included</li>
+                            <li><i class="fas fa-check"></i> Full operator training</li>
+                            <li><i class="fas fa-check"></i> 24/7 technical support</li>
+                            <li><i class="fas fa-check"></i> Equipment insurance</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="pricing-btn">Request Quote</a>
+                </div>
+                
+                <div class="pricing-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>Monthly Rental</h3>
+                        <div class="price">
+                            <span class="price-value">₱250,000</span>
+                            <span class="price-period">Starting at</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 30-day equipment use</li>
+                            <li><i class="fas fa-check"></i> Priority delivery and pickup</li>
+                            <li><i class="fas fa-check"></i> Fuel included</li>
+                            <li><i class="fas fa-check"></i> Professional operator included</li>
+                            <li><i class="fas fa-check"></i> 24/7 on-site support</li>
+                            <li><i class="fas fa-check"></i> Comprehensive insurance</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="pricing-btn">Request Quote</a>
+                </div>
+            </div>
+            
+            <div class="pricing-note" data-aos="fade-up">
+                <p>Rates vary by equipment type and project specifications. Contact us for a customized quote based on your specific requirements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Recent Projects</h2>
+                <p>Showcasing our equipment in action on various construction sites</p>
+            </div>
+            
+            <div class="projects-gallery" data-aos="fade-up">
+                <div class="project-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0bEMhBGwTn67ek_ZI2b2x8UR0LoWBHTQtw&s" alt="Highway Construction">
+                    <div class="project-overlay">
+                        <h3>Highway Construction</h3>
+                        <p>Expansion Project</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpMa0MuFStm2N3NjoAp35rFraCdIoGhdh1DQ&s" alt="Commercial Building">
+                    <div class="project-overlay">
+                        <h3>Commercial Development</h3>
+                        <p>Makati Business District</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe4MOiYB0LPFvmjMLaCLNVK0iBgWNcmsnOYmUZwGgcGKpUkH4twbKQ8oZ32hzYGKF98NEqexkCECfNbdNySFwIYrgCIB3unoE8Fjb4XvD-22eLs0O55YECzYlPldG086ClfWWTPJg?key=jSBN_fcLmpukkJQagy0LtRdx" alt="Residential Community">
+                    <div class="project-overlay">
+                        <h3>Residential Community</h3>
+                        <p>Subdivision Project</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <img src="https://www.enr.com/ext/resources/Issues/MidAtlantic_Issues/2018/08-Aug/20-Aug/BDR-1-15-Inspection_2016-05-05---186.jpg" alt="Bridge Construction">
+                    <div class="project-overlay">
+                        <h3>Bridge Construction</h3>
+                        <p>Connecting Bridge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Client Testimonials</h2>
+                <p>What our clients have to say about our heavy equipment services</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Penguin Sales & Services provided exceptional equipment and operators for our highway project. Their excavators and bulldozers performed flawlessly, and their team was professional and responsive."</p>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s200x200&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_eui2=AeEB7CFX1p2OVFAfTa-m-vx-Wt9TLzuBU1Ba31MvO4FTULQ_WXQtorF2f7SkCF2t7yUpF_0_gXkE0KF5Af7W8i0P&_nc_ohc=N52xZ5eAv9QQ7kNvgEBXAKm&_nc_oc=AdnwI7oa_veS1KHcHVmbrRtM4FE8tSXevm6GWCol9bsGNg3zTzjKHwMsTaVWIa-sGZU&_nc_zt=24&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=09xE4tlY5BaS74KbpsNp_A&oh=00_AYFpHiunWpWaN5PSLF2iAQ7aqgJpfMwS879o14HiGRuOlA&oe=68098BBA" alt="Robert Santos">
+                        </div>
+                        <div class="client-info">
+                            <h4>Carl Gata-an</h4>
+                            <p>Boi Paldo, Certified Skamir</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"We rented multiple pieces of equipment for our commercial development project. The quality of machinery and technical support provided was outstanding. Highly recommended!"</p>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/481197299_1686798665550178_3234891693299528600_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=106&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeFYcAwfKw7_HAuqOKD1NVFXYkup5JgWI3JiS6nkmBYjclhSU6zdCVUIZoNWP_I8GzRjTBwlthf4d1R8k55CUJCw&_nc_ohc=43cRaIkO_DwQ7kNvgGuFVoM&_nc_oc=Adk2Q9zBjBdpFuy73kx1ifSy7eXWMHC5ZFFmXeZDQn-ml0m9d0Nka5na2OnwWwshyx8&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=PHxy2w9Qy0AynrZV7TcWxw&oh=00_AYHv5xsWnTdmP4nqP0_Rlh-f7x77v87JFJ_zz-rSh2nkaA&oe=67E7D547" alt="Maria Garcia">
+                        </div>
+                        <div class="client-info">
+                            <h4>Sigfredo Fernandez</h4>
+                            <p>Foreman at Caridad Area, Holy Builders</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The monthly rental package was perfect for our long-term project. Having a skilled operator included saved us time and money. The equipment was well-maintained and reliable."</p>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-1/421204847_226140057239324_5354751582599279847_n.jpg?stp=c0.36.1080.1080a_cp0_dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHHbe2CrierGDEr6aDSDO5xBXWPKIi-RakFdY8oiL5Fqad4kgdocTAEeKjtqh8CFuWWnwm7T0eqF_EFctw19hmT&_nc_ohc=DSrI7Wc16KMQ7kNvgH7c9N6&_nc_oc=AdlUyaOqg1LZtsKwCEYicZNLpSYY8ZphkMZPMwdY6vHYIwWV1F9HyOj_mLliPb8Pw3w&_nc_zt=24&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=UA3mN9Sc90N4jPZ8_0bqaw&oh=00_AYEGFnZ-RAWq1XWGx_PydI6DaRh_7CrHj6u2fQedxG9p7w&oe=67E7E5A2" alt="David Tan">
+                        </div>
+                        <div class="client-info">
+                            <h4>Emil John Elefante</h4>
+                            <p>The Unpredictable, Ceo of Ceres Liner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our heavy equipment services</p>
+            </div>
+            
+            <div class="faq-container" data-aos="fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of heavy equipment do you offer?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive range of heavy equipment including excavators, bulldozers, wheel loaders, backhoe loaders, road rollers, dump trucks, cranes, and more. Contact us with your specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide operators with the equipment?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer both equipment-only rentals and rentals with certified operators. Our monthly packages include professional operators, while daily and weekly rentals can be upgraded to include operators for an additional fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your delivery radius?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically deliver equipment within a 100km radius of Metro Manila. For projects beyond this area, additional transportation fees may apply. We can service most locations throughout Luzon and can arrange equipment for projects in Visayas and Mindanao.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is included in the rental price?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our standard rental prices include the equipment, delivery and pickup, basic fuel allowance, equipment insurance, and technical support. Operator services, extended fuel allowances, and additional attachments are available at additional costs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book equipment?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 1-2 weeks in advance for most equipment. For larger projects requiring multiple machines or specialized equipment, 3-4 weeks notice is preferred to ensure availability.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens if equipment breaks down during my rental?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In the rare event of equipment breakdown due to mechanical issues, we will promptly repair or replace the equipment at no additional cost. Our technical team is available 24/7 to address any issues that may arise during your rental period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Request a Quote</h2>
+                <p>Tell us about your project and equipment needs</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-form" data-aos="fade-right">
+                    <form id="equipment-contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Enter your company name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="equipment">Equipment Needed</label>
+                            <select id="equipment" name="equipment">
+                                <option value="">Select equipment type</option>
+                                <option value="excavator">Excavator</option>
+                                <option value="bulldozer">Bulldozer</option>
+                                <option value="loader">Wheel Loader</option>
+                                <option value="roller">Road Roller</option>
+                                <option value="backhoe">Backhoe Loader</option>
+                                <option value="dump-truck">Dump Truck</option>
+                                <option value="multiple">Multiple Equipment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration">Rental Duration</label>
+                            <select id="duration" name="duration">
+                                <option value="">Select rental period</option>
+                                <option value="daily">Daily (1-6 days)</option>
+                                <option value="weekly">Weekly (1-3 weeks)</option>
+                                <option value="monthly">Monthly (1+ months)</option>
+                                <option value="unsure">Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project and specific requirements"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact-btn">Submit Quote Request</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>123 Industrial Avenue, Makati City, Philippines</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>(0923) 086 8342</p>
+                        <p>Mon-Sat: 8:00 AM - 6:00 PM</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>equipment@penguinservices.com</p>
+                        <p>support@penguinservices.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Response Time</h3>
+                        <p>Quote requests: Within 24 hours</p>
+                        <p>Emergency equipment: Same day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/images/logo.jpg" alt="Penguin Sales & Services">
+                    <p>Your trusted partner for professional heavy equipment rentals and services across the Philippines.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/index.html">Back to Home</a></li>
+                        <li><a href="#services">Our Equipment</a></li>
+                        <li><a href="#pricing">Rental Rates</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#contact">Request Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Equipment</h3>
+                    <ul>
+                        <li><a href="#services">Excavators</a></li>
+                        <li><a href="#services">Bulldozers</a></li>
+                        <li><a href="#services">Wheel Loaders</a></li>
+                        <li><a href="#services">Road Rollers</a></li>
+                        <li><a href="#services">Backhoe Loaders</a></li>
+                        <li><a href="#services">Dump Trucks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Industrial Avenue, Makati</li>
+                        <li><i class="fas fa-phone-alt"></i> (0923) 086 8342</li>
+                        <li><i class="fas fa-envelope"></i> equipment@penguinservices.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Penguin Sales & Services Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Button -->
+    <a href="#contact" class="quote-btn">
+        <div class="quote-icon">
+            <i class="fas fa-file-contract"></i>
+        </div>
+        <div class="quote-text">
+            <span>Get a</span>
+            <strong>Free Quote</strong>
+        </div>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Add AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="heavyEquipmentServices.js"></script>
+</body>
+</html>
