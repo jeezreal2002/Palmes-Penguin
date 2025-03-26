@@ -25,6 +25,10 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
 }
 
 body {
@@ -32,6 +36,9 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
 }
 
 .container {
@@ -289,10 +296,14 @@ header.scrolled .burger {
     padding: 120px 5% 80px;
     background-color: var(--gray-light);
     overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .hero-content {
     max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .hero-content h1 {
@@ -426,6 +437,7 @@ header.scrolled .burger {
     color: var(--text-light);
     font-size: 2rem;
     transition: var(--transition);
+    position: relative;
 }
 
 .service-card:hover .service-icon {
@@ -480,7 +492,7 @@ header.scrolled .burger {
 .step:not(:last-child):after {
     content: '';
     position: absolute;
-    left: 35px;
+    left: 35px !important;
     top: 70px;
     height: calc(100% - 10px);
     width: 2px;
@@ -651,6 +663,9 @@ header.scrolled .burger {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
 }
 
 .emergency-icon {
@@ -714,6 +729,7 @@ header.scrolled .burger {
     position: relative;
     height: 250px;
     box-shadow: var(--box-shadow);
+    width: 100%;
 }
 
 .fleet-item img {
@@ -1023,6 +1039,7 @@ header.scrolled .burger {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 40px;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .footer-logo {
@@ -1125,9 +1142,6 @@ header.scrolled .burger {
     color: var(--gray-medium);
     font-size: 0.9rem;
 }
-
-
-
 
 /* Emergency Call Button (continuation) */
 .emergency-call-btn {
@@ -1255,7 +1269,9 @@ header.scrolled .burger {
     
     .step {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        width: 100%;
     }
     
     .step-number {
@@ -1264,6 +1280,10 @@ header.scrolled .burger {
     
     .step:not(:last-child):after {
         display: none;
+    }
+    
+    .step-content {
+        width: 100%;
     }
     
     .pricing-cards {
@@ -1327,8 +1347,7 @@ header.scrolled .burger {
     .emergency-call-btn {
         width: 60px;
         height: 60px;
-        justify-content: center;
-        padding: 0;
+        border-radius: 50%;
     }
     
     .emergency-call-btn .call-icon {
@@ -1337,5 +1356,43 @@ header.scrolled .burger {
     
     .info-card {
         padding: 20px 15px;
+    }
+    
+    /* Fix container padding */
+    .container {
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    /* Adjust grid layouts for mobile */
+    .services-grid,
+    .fleet-gallery,
+    .testimonials-slider,
+    .contact-wrapper,
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    /* Ensure hero section content doesn't overflow */
+    .hero-content h1 {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    /* Fix the step numbers causing overflow */
+    .step-number {
+        min-width: 70px;
+        width: 70px;
+        height: 70px;
+        margin-right: 15px;
+    }
+    
+    /* Properly size the footer sections */
+    .footer-content {
+        width: 100%;
     }
 } 
