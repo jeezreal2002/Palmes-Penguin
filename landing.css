@@ -1,20 +1,20 @@
 /* General Styles */
 :root {
-    --primary-color: #0066cc;
-    --primary-dark: #004d99;
-    --secondary-color: #00529b;
-    --accent-color: #ff9900;
-    --accent-dark: #e68a00;
+    --primary-color: #00456e;
+    --primary-dark: #003353;
+    --secondary-color: #2c3e50;
+    --accent-color: #f8991d;
+    --accent-dark: #e08000;
     --text-color: #333333;
     --text-light: #757575;
-    --light-bg: #f8f9fa;
-    --dark-bg: #2c3e50;
+    --light-bg: #f5f9fc;
+    --dark-bg: #1a2a3a;
     --white: #ffffff;
     --border-color: #e0e0e0;
     --success-color: #28a745;
-    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    --gradient-dark: linear-gradient(135deg, var(--dark-bg), #1a2530);
-    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), #006da4);
+    --gradient-dark: linear-gradient(135deg, var(--dark-bg), #0c1520);
+    --box-shadow: 0 5px 15px rgba(0, 69, 110, 0.1);
     --transition: all 0.3s ease;
     --border-radius: 8px;
 }
@@ -118,7 +118,6 @@ header.sticky {
     font-weight: 700;
 }
 
-
 .logo img{
     height: 50px;
     border-radius: 50%;
@@ -206,17 +205,20 @@ header.sticky {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 300px;
+    width: 80%; /* Control width for smaller screens */
+    max-width: 300px; /* Maximum width */
     height: 100vh;
     background-color: var(--white);
     z-index: 1001;
     transition: var(--transition);
     overflow-y: auto;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    visibility: hidden; /* Hide it completely when not active */
 }
 
 .mobile-nav.active {
     right: 0;
+    visibility: visible;
 }
 
 .close-menu {
@@ -239,6 +241,7 @@ header.sticky {
 .mobile-links a {
     color: var(--text-color);
     font-weight: 500;
+    display: block; /* Make links block-level for better touch targets */
 }
 
 .mobile-links a:hover {
@@ -253,6 +256,7 @@ header.sticky {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Full width for better touch targets */
 }
 
 .mobile-dropdown-content {
@@ -260,10 +264,12 @@ header.sticky {
     list-style: none;
     padding-left: 20px;
     margin-top: 10px;
+    width: 100%; /* Full width of parent */
 }
 
 .mobile-dropdown-content.active {
     display: block;
+    width: 100%; /* Full width relative to parent */
 }
 
 .mobile-dropdown-content li {
@@ -1150,6 +1156,7 @@ header.sticky {
 }
 
 @media screen and (max-width: 768px) {
+ 
     .section-title {
         font-size: 2rem;
     }
@@ -1200,4 +1207,111 @@ header.sticky {
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
+
+    .service-image {
+        height: 180px;
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .hero-buttons {
+        width: 100%;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Fix horizontal overflow issues on mobile */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Fix container width on small screens */
+.container {
+    width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+/* Fix grid elements that might be causing overflow */
+.service-card, 
+.testimonial-card,
+.project-card,
+.about-wrapper,
+.project-slider,
+.testimonials-grid,
+.services-grid,
+.stats-grid,
+.contact-wrapper {
+    max-width: 100%;
+}
+
+/* Adjust service image height on mobile */
+@media screen and (max-width: 576px) {
+    .service-image {
+        height: 180px;
+    }
+    
+    /* Reduce padding on mobile to avoid overflow */
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    /* Fix mobile padding on all sections */
+    section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Ensure images don't overflow their containers */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Fix hero buttons on small screens */
+    .hero-buttons {
+        width: 100%;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Additional fixes for larger tablets */
+@media screen and (max-width: 992px) {
+    /* Ensure grid items don't overflow */
+    .services-grid, 
+    .testimonials-grid, 
+    .project-slider {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fix for video background on mobile */
+.video-background video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    max-width: none;
 }
